@@ -65,4 +65,8 @@ class TicTacToe
     end
   end
 
+  def full?
+    @board.all?{|marker| ["X", "O"].include?(marker)}
+  end
+
 end
