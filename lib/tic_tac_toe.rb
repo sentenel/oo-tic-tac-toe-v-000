@@ -61,7 +61,7 @@ class TicTacToe
 
   def won?
     WIN_COMBINATIONS.index do |combination|
-      @combination.all?{|position| @board[position] == "X"} || @combination.all?{|index| @board[position] == "O"}
+      @combination.all?{|index| @board[index] == "X"} || @combination.all?{|index| @board[index] == "O"}
     end
   end
 
