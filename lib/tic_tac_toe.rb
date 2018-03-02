@@ -55,4 +55,8 @@ class TicTacToe
     @board.count{|marker| marker != " "}
   end
 
+  def current_player
+    turn_count % 2 == 0 ? "X" : "O"
+  end
+
 end
