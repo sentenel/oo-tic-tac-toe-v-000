@@ -12,7 +12,7 @@ class TicTacToe
   [1,4,7], # Middle column
   [2,5,8], # Right column
   [0,4,8], # First diagonal
-  [2,4,6], # Second diagonal
+  [2,4,6] # Second diagonal
   ]
 
   def display_board
