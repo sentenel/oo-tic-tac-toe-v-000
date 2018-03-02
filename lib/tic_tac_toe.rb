@@ -69,4 +69,8 @@ class TicTacToe
     @board.all?{|marker| ["X", "O"].include?(marker)}
   end
 
+  def draw?
+    full? && !won?
+  end
+
 end
