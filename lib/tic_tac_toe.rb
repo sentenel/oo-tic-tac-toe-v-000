@@ -59,4 +59,10 @@ class TicTacToe
     turn_count % 2 == 0 ? "X" : "O"
   end
 
+  def won?
+    WIN_COMBINATIONS.index do |combination|
+      @combination.all?{|index| @board[index] == "X"} || @combination.all?{|index| @board[index] == "O"}
+    end
+  end
+
 end
